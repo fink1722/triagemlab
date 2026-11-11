@@ -1,0 +1,25 @@
+# Dependências e arquivos gerados
+node_modules/
+coverage/
+dist/
+build/
+*.tsbuildinfo
+
+# Configuração local da Vercel
+.vercel/
+
+# Variáveis de ambiente locais
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs
+*.log
+
+# Arquivos do sistema e do editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

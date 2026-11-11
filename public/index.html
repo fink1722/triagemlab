@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="TriagemLab: demonstração educativa sobre confiabilidade de sistemas automatizados na saúde.">
+  <title>TriagemLab | O fator humano na saúde</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header"><div class="brand"><span class="logo">✚</span><span>Triagem<span class="accent">Lab</span></span></div></header>
+    <section id="inicio" class="panel" aria-labelledby="titulo">
+    
+        <h2 id="titulo" tabindex="-1">Sr. Antônio, 60 anos (personagem fictício)</h2>
+        <p>A filha do Sr. Antônio está preocupada e conta o que vem acontecendo.</p>
+        <p>Há alguns meses, depois de ler na internet sobre os malefícios do sal, ele decidiu cortá-lo completamente da alimentação. Um médico já havia comentado, numa consulta antiga, que ele deveria cuidar da pressão. Pesquisou como substituir o sal de cozinha, passou a usar um produto que encontrou para comprar pela internet e, desde então, prepara toda a comida em casa com essa substituição.</p>
+        <p>Nas últimas semanas, a filha notou que o rosto dele está cheio de espinhas, algo que nunca teve. Ele reclama de muita sede e bebe água o dia inteiro. Dorme muito pouco e anda cansado, com um pouco de desequilíbrio ao caminhar. Nos últimos dias, tem ficado desconfiado e agitado: diz que o vizinho está tentando envenená-lo e recusa a comida e a água de casa.</p>
+        <p>Ele não sabe informar a pressão arterial atual e não se lembra de ter tido febre.</p>
+      <form id="formulario">
+        <label for="sintomas">Quais sintomas você identificou?</label>
+        <p id="sintomas-ajuda" class="hint">Use apenas informações do caso fictício.</p>
+        <textarea id="sintomas" rows="4" required aria-describedby="sintomas-ajuda"></textarea>
+        <p id="erro" class="error" role="alert"></p>
+        <button id="simular" class="button" type="submit">Simular análise <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+    <section id="carregando" class="panel loading hidden" aria-labelledby="carregando-titulo">
+      <div class="spinner" aria-hidden="true"></div>
+      <h2 id="carregando-titulo" tabindex="-1">Analisando os sintomas…</h2>
+      <p role="status">Aguarde enquanto a resposta é preparada.</p>
+    </section>
+    <section id="resultado" class="panel hidden" aria-labelledby="resultado-titulo">
+      <p class="eyebrow">RESULTADO DA DEMONSTRAÇÃO</p>
+      <h1 id="resultado-titulo" tabindex="-1">Diagnóstico apresentado</h1>
+      <p id="hipotese" class="hipotese"></p>
+
+    
+      
+    </section>
+  </main>
+</body>
+</html>

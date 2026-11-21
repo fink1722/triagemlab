@@ -178,6 +178,26 @@ textarea:focus-visible,
   font-weight: 800;
 }
 
+.hipotese-titulo {
+  margin: 0 0 8px;
+}
+
+.hipotese-texto {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+label + textarea {
+  margin-top: 12px;
+}
+
+.button-secundario {
+  border: 1px solid #54718a;
+  background: transparent;
+  color: #e9eef8;
+}
+
 .loading {
   padding-block: 48px;
   text-align: center;
@@ -248,6 +268,10 @@ footer {
 @media (hover: hover) {
   .button:hover {
     background: #83efd5;
+  }
+
+  .button-secundario:hover {
+    background: #192a3e;
   }
 }
 
